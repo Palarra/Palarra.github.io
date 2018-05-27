@@ -1,0 +1,262 @@
+@font-face 
+{
+    font-family: "Cantarell-Regular";
+    src: url("/fonts/Cantarell-Regular.ttf") format("ttf");
+}
+
+h1, h3
+{
+	color: rgb(17, 25, 34);
+}
+
+body
+{
+	background-color : rgb(240, 240, 240);
+	font-family: "Cantarell-Regular", sans-serif;
+	margin: 0;
+    
+}
+
+header
+{
+    padding: 50px;
+	text-align: center;
+    background-color: rgb(28, 35, 43);
+    
+}
+
+#subtitle
+{
+    color: white;
+}
+
+#porte
+{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+section
+{
+	flex: 8;
+	padding: 20px;
+}
+
+article
+{
+    background-color: white;
+    padding: 18px;
+    margin : 5px;
+    box-shadow: 8px 8px 8px #aaa; 
+    border-radius: 5px 5px 5px 5px;
+}
+
+article ul
+{
+    padding: 20px;
+}
+
+aside
+{
+	flex: 2;
+	padding: 20px;
+    background-color: rgb(222, 222, 222);
+    text-align: center;
+    height: 100%;
+}
+
+aside h2
+{
+    font-size: 30px;
+}
+
+
+nav
+{
+	display: flex;
+	text-align: center;
+	width: 100%;
+	height: 70px;
+	color: rgb(249,249,249);
+    background-color: rgb(17, 25, 34);
+    padding: 0;
+}
+
+nav ul
+{
+	display:flex;
+	flex: 8;
+    list-style-type: none;
+    overflow: hidden;
+    margin: 0;
+}
+
+#log
+{
+    display: flex;
+}
+
+#log a
+{
+    display: block;
+    color: white;
+    font-size: 20px;
+    line-height: 70px;
+    text-align: center;
+
+    text-decoration: none;
+    height: 70px;
+    padding: 0px 20px 0px 20px;
+}
+
+#log a:hover
+{
+    background-color: rgb(50, 50, 50);
+    color: orange;
+}
+
+li
+{
+    margin: 0px 0px 0px 0px;
+	width: 25%;
+    float: left;
+}
+
+li a 
+{
+    display: block;
+    color: white;
+    font-size: 20px;
+    line-height: 70px;
+    text-align: center;
+
+    text-decoration: none;
+    height: 70px;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover 
+{
+    background-color: rgb(50, 50, 50);
+    color: orange;
+}
+
+#search_bar
+{
+	display: flex;
+	width: 20%;
+	height: 70px;
+    margin-right: 20px;
+}
+
+#search
+{
+	display: flex;
+    width: 20%;
+	height: 30px;
+	margin:auto;
+    margin-right: 0px;  
+    background: #2b303b;
+    background-image: url(loupe.png);
+    background-size: 23px 23px;
+    background-repeat: no-repeat;
+    background-position: 5px 5px;
+    
+    border: none;
+    font-size: 10pt;
+    color: #63717f;
+    padding-left: 35px;
+    border-radius: 4px 4px 4px 4px;
+    
+    -webkit-transition: width .4s ease-in-out;
+    transition: width .4s ease-in-out;
+}
+
+#search:focus
+{
+   width: 60%; 
+}
+
+p
+{
+	color: rgb(17, 25, 34);
+	text-indent: 50px;
+    text-align:justify;
+    letter-spacing: 1px;
+    font-size: 18px;
+}
+
+table
+{
+	color: rgb(17, 25, 34);
+	border-collapse : collapse;
+	border-color : rgb(255,255,255);
+}
+
+a:link
+{
+	color: coral;
+}
+
+a:hover
+{
+    color: hotpink;
+}
+
+#logo_aa:hover
+{
+    webkit-transform: rotateY(150deg); /*Safari */
+    transform: rotateY(150deg);
+    perspective(10);
+	transition-timing-function : ease-in-out;
+	transition-duration : 1.0s;
+}
+
+td, th /* Toutes les cellules des tableaux... */
+{
+ 	padding-left : 30px;
+    padding-right : 30px;
+    border-right :1px solid rgb(17, 25, 34);;
+    border-bottom: 1px solid rgb(17, 25, 34);;
+    font-size : 150%;
+}
+
+td:hover
+{
+    background-color: rgb(200, 200, 200);
+}
+
+footer
+{
+    padding-left: 50px;
+    padding-bottom: 30px;
+    background-color: rgb(28, 35, 43);
+}
+
+footer p
+{
+    color: white;
+    margin-top: 0px;
+    padding-top: 30px;
+}
+
+#myForm
+{
+    width: 700px;
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: 8px 8px 8px #aaa;
+}
+
+#myForm h3
+{
+    margin-bottom: 10px;
+}
+
+#sign_button
+{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}

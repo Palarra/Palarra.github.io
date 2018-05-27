@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="normalize.css" />
+		<link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="fonts/css/fontawesome-all.min.css" />
+		<title>Inscription</title>
+	</head>
+	
+	<body>
+	    <header>
+			<img src="logo_aa.png" alt = "AACorp">
+			<div id="subtitle"><h2>Les dernières news en matière d'ESPORT</h2></div>
+		</header>
+		
+		<nav>
+			<ul>
+					<li><a href="index.html">Accueil</a></li>
+					<li><a href="index.html">Fortnite</a></li>
+					<li><a href="index.html">League of Legends</a></li>
+					<li><a href="index.html">Hearthstone</a></li>
+			</ul>
+			<div id="search_bar">
+				<input type="text" id="search" placeholder="Search ..." />
+			</div>
+            <div id="log"><a href="connexion.html">Connexion</a><a href="inscription.html">Inscription</a></div>
+		</nav>
+        
+        <div id="inscription">
+            <article>
+                <form id= "myForm" method="get">
+                    <h1>Connexion:</h1>
+                
+                    <div>
+                        <h3>Nom d'utilisateur : </h3>
+                        <input name = "username" id ="username" type="text" placeholder = "Nom d'utilisateur" />
+                    </div>
+
+                    <div>
+                        <h3>Mot de passe : </h3>
+                        <input name = "userpwd" id ="userpwd" type="password" placeholder="Mot de passe" />
+                    </div>
+
+                    <div id="sign_button">
+                        <input id="connect" type="submit" value="Connexion" /><div id="sign_msg"> <p></p> </div>
+                    </div>
+                    <div>
+                        <a id = "inscrire" href="inscription.html">Vous n'êtes pas encore inscrit ?</a>
+                    </div>
+
+                </form>
+            </article>
+        </div>
+		<footer>
+			<p>Tout droit réservé à AA Corporation</p>
+            <a href = "http://www.aacorporation.com">Nous contacter</a>
+			<a href = "https://www.service-public.fr/particuliers/vosdroits/F1905">Règlement du site !</a>
+		</footer>
+		<script src="connexion.js"></script>
+	</body>	
+</html>
