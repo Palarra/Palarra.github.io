@@ -86,7 +86,7 @@ nav
 nav ul
 {
 	display:flex;
-	flex: 8;
+	width: 70%;
     list-style-type: none;
     overflow: hidden;
     margin: 0;
@@ -202,6 +202,12 @@ a:link
 a:hover
 {
     color: hotpink;
+}
+
+#logo_aa
+{
+    width : 75%;
+    height: 75%;
 }
 
 #logo_aa:hover
