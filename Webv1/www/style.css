@@ -4,6 +4,7 @@
     src: url("/fonts/Cantarell-Regular.ttf") format("ttf");
 }
 
+
 h1, h3
 {
 	color: rgb(17, 25, 34);
@@ -39,7 +40,7 @@ header
 
 section
 {
-	flex: 8;
+	flex: 3;
 	padding: 20px;
 }
 
@@ -59,7 +60,7 @@ article ul
 
 aside
 {
-	flex: 2;
+	flex: 1;
 	padding: 20px;
     background-color: rgb(222, 222, 222);
     text-align: center;
@@ -158,7 +159,7 @@ li a:hover
 	margin:auto;
     margin-right: 0px;  
     background: #2b303b;
-    background-image: url(loupe.png);
+    background-image: url(Images/loupe.png);
     background-size: 23px 23px;
     background-repeat: no-repeat;
     background-position: 5px 5px;
