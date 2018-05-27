@@ -12,6 +12,29 @@
         position: -webkit-sticky;
         top: 0px;
     }
+    
+    /* Styles des elements pouvant causer un bug pour l'affichage sur les écrans de petites tailles */
+	img,
+	table,
+	td,
+	blockquote,
+	code,
+	pre,
+	textarea,
+	input,
+	iframe,
+	object,
+	embed,
+	video
+    {
+		max-width: 100%;
+	}
+	
+	/* Conserver le ratio des images */
+	img 
+    {
+		height: auto;
+	}
 }
 
 h1, h3
