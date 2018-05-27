@@ -28,6 +28,7 @@ body
 
 header
 {
+    height: 10%;
     padding: 50px;
 	text-align: center;
     background-color: rgb(28, 35, 43);
@@ -244,6 +245,7 @@ td:hover
 
 footer
 {
+    height: 10%;
     padding-left: 50px;
     padding-bottom: 30px;
     background-color: rgb(28, 35, 43);
