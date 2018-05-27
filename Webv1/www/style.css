@@ -4,7 +4,7 @@
     src: url("/fonts/Cantarell-Regular.ttf") format("ttf");
 }
 
-@media screen and (max-width: 1280px)
+@media screen and (max-width: 1500px)
 {
     nav
     {
@@ -12,6 +12,7 @@
         top: 0px;
     }
 }
+
 h1, h3
 {
 	color: rgb(17, 25, 34);
