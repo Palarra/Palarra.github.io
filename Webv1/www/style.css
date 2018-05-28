@@ -37,14 +37,34 @@
 	}
 }
 
+h1
+{
+    font-size: 250%;
+}
+
+h3
+{
+    font-size: 200%;
+}
+
 h1, h3
 {
 	color: rgb(17, 25, 34);
 }
 
+p
+{
+    font-size: 100%;
+}
+
+html 
+{
+  height: 100%;
+}
+
 body
 {
-    height: 100%;
+    min-height: 100%;
     width: 100%;
 	background-color : rgb(240, 240, 240);
 	font-family: "Cantarell-Regular", sans-serif;
@@ -55,11 +75,12 @@ body
 header
 {
     width: 100%;
-    height: 1%;
+    height: 15%;
     padding-top: 50px;
     padding-bottom: 50px;
 	text-align: center;
     background-color: rgb(28, 35, 43);
+    font-size: 30px;
     
 }
 
@@ -84,7 +105,7 @@ header
 
 section
 {
-	flex: 3;
+	flex: 2.5;
 	padding: 20px;
 }
 
@@ -105,7 +126,7 @@ article ul
 aside
 {
 	flex: 1;
-	padding: 20px;
+	padding: 2 0px;
     background-color: rgb(222, 222, 222);
     text-align: center;
     height: 100%;
@@ -116,93 +137,79 @@ aside h2
     font-size: 30px;
 }
 
-
 nav
 {
-	display: flex;
-	text-align: center;
-	width: 100%;
-	height: 70px;
-	color: rgb(249,249,249);
+	display: flex; 
+    flex-wrap: wrap; 
+    width: 100%;
+    height: 50px;
     background-color: rgb(17, 25, 34);
-    padding: 0;
 }
 
-nav ul
-{
-	display:flex;
-	width: 70%;
-    list-style-type: none;
-    overflow: hidden;
-    margin: 0;
-}
-
-nav li
-{
-    margin: 0px 0px 0px 0px;
-	width: 25%;
-    float: left;
-}
-
-nav li a 
-{
-    display: block;
-    color: white;
-    font-size: 20px;
-    line-height: 70px;
-    text-align: center;
-    text-decoration: none;
-    height: 70px;
-}
-
-nav li a:hover 
-{
-    background-color: rgb(50, 50, 50);
-    color: orange;
-}
-
-#log
-{
+.menu 
+{ 
+    flex: 2;
     display: flex;
+    flex-wrap: wrap; 
+    height: 100%;
+    padding-left: 50px;
+    padding-right: 20px;
 }
 
-#log a
+.menu a
 {
-    display: block;
-    color: white;
-    font-size: 20px;
-    line-height: 70px;
-    text-align: center;
-
+    flex: 1;
+    overflow: hidden;
+    color: #f2f2f2;
     text-decoration: none;
-    height: 70px;
-    padding: 0px 20px 0px 20px;
+    font-size: 19px;
+    text-align: center;
+    padding: 17px 15px;
 }
 
-#log a:hover
+.menu a:hover 
 {
-    background-color: rgb(50, 50, 50);
-    color: orange;
+    background-color: #111;
+    color: coral;
 }
 
-#search_bar
+.user_bar
 {
-	display: flex;
-	width: 20%;
-	height: 70px;
-    margin-right: 20px;
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap; 
+    flex-direction: row-reverse;
+    overflow: hidden;
+    color: #f2f2f2;
+    text-decoration: none;
+    font-size: 17px;
 }
 
-#search
+.user_bar a
 {
-	display: flex;
-    width: 20%;
-	height: 30px;
-	margin:auto;
-    margin-right: 0px;  
+    flex: 1;
+    color: #f2f2f2;
+    text-decoration: none;
+    font-size: 19px;
+    text-align: center;
+    padding: 17px 15px;
+}
+.user_bar a:hover 
+{
+    background-color: #111;
+    color: coral;
+}
+.search
+{
+    flex: 1;
+    width: 20px;;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    
     background: #2b303b;
     background-image: url(Images/loupe.png);
-    background-size: 23px 23px;
+    background-size: 15px 15px;
     background-repeat: no-repeat;
     background-position: 5px 5px;
     
@@ -211,14 +218,6 @@ nav li a:hover
     color: #63717f;
     padding-left: 35px;
     border-radius: 4px 4px 4px 4px;
-    
-    -webkit-transition: width .4s ease-in-out;
-    transition: width .4s ease-in-out;
-}
-
-#search:focus
-{
-   width: 60%; 
 }
 
 p
@@ -296,6 +295,11 @@ footer p
     padding-top: 10px;
     padding-bottom: 10px;
     box-shadow: 8px 8px 8px #aaa;
+}
+
+#myForm .form_elem
+{
+    margin: 15px;
 }
 
 #myForm h3

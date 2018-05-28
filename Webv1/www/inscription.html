@@ -2,7 +2,7 @@
 <html lang="fr">
 	<head>
 		<meta charset="utf-8" />
-		<link rel="stylesheet" href="normalize.css" />
+		<link rel="stylesheet" href="reset.css" />
 		<link rel="stylesheet" href="style.css" />
         <link rel="stylesheet" href="fonts/css/fontawesome-all.min.css" />
 		<title>Inscription</title>
@@ -14,102 +14,106 @@
 			<div id="subtitle"><h2>Les dernières news en matière d'ESPORT</h2></div>
 		</header>
 		
-		<nav>
-			<ul>
-					<li><a href="index.html">Accueil</a></li>
-					<li><a href="index.html">Fortnite</a></li>
-					<li><a href="index.html">League of Legends</a></li>
-					<li><a href="hearthstone.html">Hearthstone</a></li>
-			</ul>
-			<div id="search_bar">
-				<input type="text" id="search" placeholder="Search ..." />
-			</div>
-            <div id="log"><a href="connexion.html">Connexion</a><a href="inscription.html">Inscription</a></div>
+        <nav>
+            <div class="menu">	
+                <a href="index.html">Accueil</a>
+				<a href="index.html">Fortnite</a>
+				<a href="index.html">League of Legends</a>
+				<a href="hearthstone.html">Hearthstone</a>
+            </div>
+            
+            <div class="user_bar">
+                <a href="connexion.html">Connexion</a>
+                <a href="inscription.html">Inscription</a>
+                 <input type="text" class="search" placeholder="Search ..." />
+            </div>     
 		</nav>
         
-        <div id="inscription">
-            <article>
-                <form id= "myForm" action="../htbin/register.py" method="post">
-                    <h1>Formulaire d'inscription :</h1>
-                    <p>Les champs avec (*) sont obligatoires</p>
-                    <div>
-                        <h3>Sexe : </h3>
-                        <select id="sexe" >
-                            <option>Sélectionnez votre sexe</option>
-                            <option>Homme</option>
-                            <option>Femme</option>
-                        </select>
-                        <span class="tooltip">Vous devez sélectionnez votre sexe</span>
-                    </div>
-					<div>
-                        <h3>* Prenom : </h3>
-                        <input name ="firstname" id ="firstname" type="text" placeholder = "Entrez du texte" />
-                        <span class="tooltip">Un prénom ne peut pas faire moins de 1 caractère</span>
-                    </div>
-                    <div>
-                        <h3>* Nom : </h3>
-                        <input name="lastname" id ="lastname" type="text" placeholder = "Entrez du texte" />
-                        <span class="tooltip">Un nom ne peut pas faire moins de 1 caractère</span>
-                    </div>
-                    <div>
-                        <h3>Adresse : </h3>
-                        <input name ="address" id ="address" type="text" placeholder = "Entrez du texte" />
-                    </div>
+        <section>
+            <div id="inscription">
+                <article>
+                    <form id= "myForm" action="../htbin/register.py" method="post">
+                        <h1>Formulaire d'inscription :</h1>
+                        <p>Les champs avec (*) sont obligatoires</p>
+                        <div class ="form_elem">
+                            <h3>Sexe : </h3>
+                            <select id="sexe" >
+                                <option>Sélectionnez votre sexe</option>
+                                <option>Homme</option>
+                                <option>Femme</option>
+                            </select>
+                            <span class="tooltip">Vous devez sélectionnez votre sexe</span>
+                        </div>
+                        <div class ="form_elem">
+                            <h3>* Prenom : </h3>
+                            <input name ="firstname" id ="firstname" type="text" placeholder = "Entrez du texte" />
+                            <span class="tooltip">Un prénom ne peut pas faire moins de 1 caractère</span>
+                        </div>
+                        <div class ="form_elem">
+                            <h3>* Nom : </h3>
+                            <input name="lastname" id ="lastname" type="text" placeholder = "Entrez du texte" />
+                            <span class="tooltip">Un nom ne peut pas faire moins de 1 caractère</span>
+                        </div>
+                        <div class ="form_elem">
+                            <h3>Adresse : </h3>
+                            <input name ="address" id ="address" type="text" placeholder = "Entrez du texte" />
+                        </div>
 
-                    <div>
-                        <h3>Ville : </h3>
-                        <input name = "city" id ="city" type="text" placeholder = "Entrez du texte" />
-                        <h3> Code Postal: </h3>
-                        <input name = "postal" id ="postal" type="text" placeholder = "Entrer votre code postal" />
-                    </div>
+                        <div class ="form_elem">
+                            <h3>Ville : </h3>
+                            <input name = "city" id ="city" type="text" placeholder = "Entrez du texte" />
+                            <h3> Code Postal: </h3>
+                            <input name = "postal" id ="postal" type="text" placeholder = "Entrer votre code postal" />
+                        </div>
 
-                    <div>
-                        <h3>Pays : </h3>
-                        <select name = "country" id="country">
-                            <option>Sélectionnez votre pays</option>
-                            <option>Allemagne</option>
-                            <option>Angleterre</option>
-                            <option>Belgique</option>
-                            <option>Etats-Unis</option>
-                            <option>Espagne</option>
-                            <option>Italie</option>
-                            <option>France</option>
-                            <option>Pays-Bas</option>
-                            <option>Suisse</option>
-                        </select>
-                        <span class="tooltip">Vous devez sélectionner votre pays</span>
-                    </div>
+                        <div class ="form_elem">
+                            <h3>Pays : </h3>
+                            <select name = "country" id="country">
+                                <option>Sélectionnez votre pays</option>
+                                <option>Allemagne</option>
+                                <option>Angleterre</option>
+                                <option>Belgique</option>
+                                <option>Etats-Unis</option>
+                                <option>Espagne</option>
+                                <option>Italie</option>
+                                <option>France</option>
+                                <option>Pays-Bas</option>
+                                <option>Suisse</option>
+                            </select>
+                            <span class="tooltip">Vous devez sélectionner votre pays</span>
+                        </div>
 
-                    <div>
-                        <h3>* Nom d'utilisateur : </h3>
-                        <input name = "username" id ="username" type="text" placeholder = "Entrez du texte" />
-                        <span class="tooltip">Le nom d'utilisateur ne peut pas faire moins de 6 caractères</span>
-                    </div>
+                        <div class ="form_elem">
+                            <h3>* Nom d'utilisateur : </h3>
+                            <input name = "username" id ="username" type="text" placeholder = "Entrez du texte" />
+                            <span class="tooltip">Le nom d'utilisateur ne peut pas faire moins de 6 caractères</span>
+                        </div>
 
-                    <div>
-                        <h3>* Adresse mail : </h3>
-                        <input name = "useremail" id ="useremail" type="text" placeholder = "Entrez du texte" />
-                    </div>
+                        <div class ="form_elem">
+                            <h3>* Adresse mail : </h3>
+                            <input name = "useremail" id ="useremail" type="text" placeholder = "Entrez du texte" />
+                        </div>
 
-                    <div>
-                        <h3>* Mot de passe : </h3>
-                        <input name = "userpwd" id ="userpwd" type="password" placeholder="Entrez un mot de passe" />
-                        <span class="tooltip">Le mot de passe doit contenir au moins 8 caractères dont une majuscule, une minuscule et un chiffre</span>
-                    </div>
+                        <div class ="form_elem">
+                            <h3>* Mot de passe : </h3>
+                            <input name = "userpwd" id ="userpwd" type="password" placeholder="Entrez un mot de passe" />
+                            <span class="tooltip">Le mot de passe doit contenir au moins 8 caractères dont une majuscule, une minuscule et un chiffre</span>
+                        </div>
 
-                    <div>
-                        <h3>* Confirmation mot de passe : </h3>
-                        <input name = "userpwd2" id ="userpwd2" type="password" placeholder="Confirmez votre mot de passe" />
-                        <span class="tooltip">Le mot de passe de confirmation doit être identique à celui d'origine</span>
-                    </div>
+                        <div class ="form_elem">
+                            <h3>* Confirmation mot de passe : </h3>
+                            <input name = "userpwd2" id ="userpwd2" type="password" placeholder="Confirmez votre mot de passe" />
+                            <span class="tooltip">Le mot de passe de confirmation doit être identique à celui d'origine</span>
+                        </div>
 
-                    <div id="sign_button">
-                        <input id="submit" type="submit" value="M'inscrire" /> <input id="reset" type="reset" value="Réinitialiser le formulaire" />
-                    </div>
-
-                </form>
-            </article>
-        </div>
+                        <div id="sign_button" class ="form_elem">
+                            <input id="submit" type="submit" value="M'inscrire" /> <input id="reset" type="reset" value="Réinitialiser le formulaire" />
+                        </div>
+                    </form>
+                </article>
+            </div>
+        </section>
+        
 		<footer>
 			<p>Tout droit réservé à AA Corporation</p>
             <a href = "http://www.aacorporation.com">Nous contacter</a>
